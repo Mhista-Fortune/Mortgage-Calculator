@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const radioError = radioGroup.querySelector(".error-message");
         if (!mortgageType) {
             isValid = false;
+
+            // Add error message if not already present
             if (!radioError) {
                 const error = document.createElement("p");
                 error.className = "error-message";
@@ -87,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 radioGroup.appendChild(error);
             }
             radioButtons.forEach(radio => radio.classList.add("error-border")); // Add red border to each radio button
+            // Add red border to each radio button
         } else {
             if (radioError) radioError.remove();
             radioButtons.forEach(radio => radio.classList.remove("error-border")); // Remove red border from each radio button
@@ -125,7 +128,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Remove error styles and messages
         document.querySelectorAll(".error-message").forEach(error => error.remove());
         document.querySelectorAll(".error-border").forEach(input => input.classList.remove("error-border"));
-        document.querySelectorAll(".error-icon-bg").forEach(icon => icon.classList.remove("error-icon-bg")); // Remove error class from icons
+        document.querySelectorAll(".error-bg").forEach(icon => icon.classList.remove("error-bg")); // Remove error class from icons
+
+        // Reset icon backgrounds to their original color
+        document.querySelectorAll(".icon-bg").forEach(icon => {
+            icon.style.backgroundColor = ""; // Reset background color
+            icon.style.color = ""; // Reset text/icon color
+        });
 
         // Clear result values
         document.getElementById('monthly-repayment').innerText = '--';
