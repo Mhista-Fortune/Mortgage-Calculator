@@ -1,0 +1,232 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PlusJakartaSans', sans-serif;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('woff');
+}
+
+.container {
+    width: 100vw;
+    padding: 1.2rem;
+}
+
+h1 {
+    font-family: 'PlusJakartaSans';
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(202, 55%, 16%);
+}
+
+.card {
+    background-color: hsl(202, 55%, 16%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.card h1, .card p {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: hsl(202, 55%, 16%);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.empty-result {
+    text-align: center;
+    padding: 2rem;
+}
+
+.completed-result {
+    display: none;
+    padding: 1rem;
+}
+
+.form-group {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group .input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-group .input-icon input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid hsl(202, 55%, 16%);
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 45px;
+}
+
+.icon-bg, .text-bg {
+    background-color: hsl(202, 86%, 94%);
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(202, 55%, 16%);
+    height: 99%;
+}
+
+.text-bg {
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+.input-icon.left .icon-bg {
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 95%;
+}
+
+.input-icon.right .icon-bg {
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 95%;
+}
+
+.input-icon.right .text-bg {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 95%;
+}
+
+.input-icon.right input {
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
+.form-group label {
+    color: hsl(202, 55%, 16%);
+    margin-bottom: 7px;
+}
+
+.radio-group {
+    display: block;
+    width: 100%;
+}
+  
+.radio-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(202, 55%, 16%);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.radio-input:hover {
+    background-color: hsl(61, 70%, 80%);
+    color: hsl(202, 55%, 16%);
+}
+
+.radio-input input {
+    display: none;
+}
+  
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+  
+.radio-input input:checked + .checkmark::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit-btn {
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* .submit-btn:hover {
+    background-color: hsl(61, 70%, 42%);
+    color: white;
+} */
+
+/* Responsive Styles */
+
+@media (min-width: 800px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 60vw;
+        margin: auto;
+    }
+
+    .container {
+        flex: 1;
+        padding: 2rem;
+    }
+
+    .card {
+        flex: 1;
+        max-width: 50%;
+        padding: 2rem;
+        background-color: hsl(202, 55%, 16%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+}
