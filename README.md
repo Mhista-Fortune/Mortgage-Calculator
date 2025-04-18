@@ -94,7 +94,7 @@ To run the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/mortgage-repayment-calculator.git
+   git clone https://github.com/Mhista-Fortune/Mortgage-Calculator.git
 
 2. **Navigate to the Project Directory**:
 cd mortgage-repayment-calculator
@@ -142,7 +142,7 @@ Contributions are welcome! If you’d like to contribute to this project, please
     Click the "Fork" button at the top of this repository.
 
 2. **Clone Your Fork:**
-    git clone https://github.com/your-username/mortgage-repayment-calculator.git
+    git clone https://github.com/Mhista-Fortune/Mortgage-Calculator.git
 
 3. **Create a New Branch:**
     git checkout -b feature-name
@@ -161,8 +161,8 @@ Contributions are welcome! If you’d like to contribute to this project, please
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [Mhista Fortune](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Add your name here](https://mortgage-calculator-web-app.netlify.app/)
+- Frontend Mentor - [Mhista Fortune](https://www.frontendmentor.io/profile/Mhista-Fortune)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 ---
