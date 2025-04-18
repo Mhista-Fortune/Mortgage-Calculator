@@ -75,8 +75,8 @@ While working on this project, I encountered the following challenges:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Mhista-Fortune/Mortgage-Calculator)
+- Live Site URL: [Add live site URL here](https://mortgage-calculator-web-app.netlify.app/)
 
 ---
 
