@@ -326,7 +326,7 @@ a {
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        border-radius: 0 15px 15px 0; /* Rounded corners on the right */
+        border-radius: 0 15px 15px 60px; /* Rounded corners on the right */
     }
 
     .card h1 {
@@ -337,6 +337,10 @@ a {
     .card p {
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    .empty-result {
+        border-radius: 0 0 0 60px !important;
     }
 
     .completed-result {
